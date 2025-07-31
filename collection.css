@@ -1,0 +1,294 @@
+body {
+    font-family: 'Michroma', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hpage {
+    display: flex;
+    gap: 20px;
+}
+
+.hpage,
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    color: black;
+    height: 60px;
+}
+
+.heading {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"]:checked+label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.check h2 {
+    margin-top: 40px;
+
+}
+
+.check-align {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check2 h2 {
+    margin-top: 150px;
+}
+
+.check-align2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.check3 h2 {
+    margin-top: 150px;
+}
+
+.check-align3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.sidebar {
+    width: 250px;
+    padding: 10px;
+    border-right: 2px solid black;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-card {
+    width: 100%;
+    text-align: center;
+}
+
+.product-card img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.footer-head,
+.footer-desc {
+    text-align: center;
+}
+
+.footer-head {
+    margin-top: 40px;
+}
+
+.footer-input {
+    margin-left: 90px;
+    padding: 10px;
+}
+
+.subs-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.end {
+    background-color: black;
+    padding: 8px;
+    margin-top: 40px;
+}
+
+.end h1 {
+    color: white;
+}
+
+.end p {
+    color: white;
+}
+
+.end-symbol {
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+        /* Increase font size for readability */
+    }
+
+    .navbar {
+        display: flex;
+        height: auto;
+        height: 20px;
+        width: 120%;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        width: 120%;
+    }
+
+    .heading {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .hpage,
+    a {
+        display: none;
+
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 10px 0;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        /* Stack products in a single column */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .footer-input {
+        margin-left: 0;
+        width: 90%;
+        padding: 8px;
+    }
+
+    .subs-btn {
+        margin: 20px auto 0 auto;
+        display: block;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .check h2,
+    .check2 h2,
+    .check3 h2 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .check-align,
+    .check-align2,
+    .check-align3 {
+        gap: 6px;
+    }
+
+    /* Footer Section */
+    .footer {
+        margin-left: 70px;
+    }
+
+    .footer-input {
+        width: 90%;
+        height: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .subs-btn {
+        margin: 20px auto;
+        display: block;
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+    .footer-desc {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .end {
+        width: 120%;
+    }
+
+    /* End Section */
+    .end h1 {
+        font-size: 20px;
+    }
+
+    .end p {
+        font-size: 14px;
+    }
+
+    .end-symbol {
+        justify-content: center;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+}
